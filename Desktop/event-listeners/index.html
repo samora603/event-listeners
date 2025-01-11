@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>File Counter</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    #fileInput {
+      margin-top: 20px;
+    }
+
+    #fileCount {
+      margin-top: 20px;
+      font-size: 18px;
+      color: #333;
+    }
+
+    label {
+      font-size: 16px;
+      color: #555;
+    }
+    .btn {
+      background-color: black;
+      color: white;
+      font-size: 16px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin: 10px;
+      transition: background-color 0.3s, transform 0.2s;
+    }
+
+    .btn:hover {
+      background-color: #444;
+      transform: scale(1.05);
+    }
+
+    .btn:active {
+      background-color: #222;
+      transform: scale(1);
+    }
+  </style>
+</head>
+<body>
+  <h1>File Counter</h1>
+  <label for="fileInput">Upload your files:</label>
+  <input type="file" id="fileInput" multiple>
+
+  <p id="output" style="margin-top: 20px; font-size: 18px; color: #333;"></p>
+  <p> Click below to check previously uploaded files</p>
+  <div id="fileCount">File count: 0</div>
+
+  <button class="btn saveButton">Save</button>
+  <button class="btn checkButton">Check</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
